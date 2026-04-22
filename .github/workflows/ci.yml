@@ -25,7 +25,7 @@ jobs:
 
       # scan the freshly built image with Trivy. Fail the job on CRITICAL.
       - name: Scan image with Trivy
-        uses: aquasecurity/trivy-action@master# อัปเกรดเวอร์ชันให้เสถียรขึ้น
+        uses: aquasecurity/trivy-action@master # อัปเกรดเวอร์ชันให้เสถียรขึ้น
         with:
             scan-type: 'image'
             image-ref: ${{ env.IMAGE_NAME }}:${{ github.sha }}
